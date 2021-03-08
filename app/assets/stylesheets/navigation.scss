@@ -1,0 +1,45 @@
+$text-color: #fff;
+$bg-primary: #0097ef;
+
+.header {
+  width: 100%;
+  height: auto;
+  color: $text-color;
+  background-color: $bg-primary;
+
+  font-style: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__title {
+    padding: 20px;
+    margin-left: 1.5rem;
+    width: 50%;
+  }
+  &__nav {
+    width: 50%;
+    &-list {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      align-items: center;
+      height: 100%;
+    }
+    &-item {
+      font-size: 1.5rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.75;
+      }
+    }
+    &-link {
+      text-decoration: none;
+      color: $text-color;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
